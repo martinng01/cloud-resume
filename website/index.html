@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <section id="hero" class="container d-flex align-items-center justify-content-center vh-100">
+    <div class="row flex-lg-row-reverse align-items-center justify-content-center">
+      <div class="col-10 col-sm-8 col-lg-6 text-center mb-4 mb-lg-0">
+        <img src="images/profile.jpeg" alt="profile picture" class="rounded-circle img-fluid">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to My Portfolio</h1>
+        <p class="lead">I'm Martin 👋, a passionate student who loves exploring new technologies and concepts. I am
+          particularly interested in AI/ML 🤖 and cloud infrastructure ⛅. I love starting new projects and learning
+          something new every time ✍, as seen by my multiple projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Artificial Intelligence Intern</h3>
+        <h4 class="lead"><em>A*STAR Aural & Language Intelligence Department, May 2024 - Aug 2024</em></h4>
+        <p>Developed a method to enhance translation quality using Retrieval-Augmented Generation (RAG) and Large
+          Language Models (LLMs), which improved translation accuracy by up to 17% evaluated with BLEU scores.</p>
+        <p>Implemented and deployed a Django-based translation website that has been used for identifying common
+          translation errors with LLMs and enhancing translation quality from lightweight NMT systems.</p>
+        <p>Fine-tuned LLMs using instruction-based methods for Text-Style Transfer tasks.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Software Engineering Intern</h3>
+        <h4 class="lead"><em>ANZElectric, Dec 2023 - May 2024</em></h4>
+        <p>Created multiple cross-platform, user-facing applications using Flutter for various hardware devices.</p>
+        <p>Designed the application's UI/UX using Figma, ensuring intuitive user experiences were delivered
+          consistently.</p>
+        <p>Developed microcontroller programs enabling seamless Bluetooth communication with mobile devices.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Artificial Intelligence Intern</h3>
+        <h4 class="lead"><em>A*STAR Aural & Language Intelligence Department, Jan 2022 - June 2022</em></h4>
+        <p>Trained and optimized hyperparameters for an AI Machine Translation model, attaining a notable 70% accuracy.
+        </p>
+        <p>Conducted thorough data cleaning and preprocessing on large datasets and employed Python for web scraping to
+          gather additional data from various websites.</p>
+        <p>Integrated the developed model with REST APIs, facilitating the creation of a user-friendly translation
+          website with seamless functionality using Flask.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container my-5">
+    <h2>Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Sales Helper</h5>
+            <p class="card-text">
+              This video calling web application enhances sales interactions by providing real-time,
+              accurate data and leveraging AI for optimized sales strategies. <br>
+              <em>(Continued from submission for TikTok Techjam 2024)</em>
+            </p>
+            <span class="badge badge-pill badge-primary">OpenCV</span>
+            <span class="badge badge-pill badge-primary">Flask</span>
+            <span class="badge badge-pill badge-primary">WebSockets</span>
+            <span class="badge badge-pill badge-primary">React</span>
+            <span class="badge badge-pill badge-primary">LangChain</span>
+            <span class="badge badge-pill badge-primary">HuggingFace</span>
+            <span class="badge badge-pill badge-primary">scikit-learn</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/yourprofile/project1" class="mt-auto" target="_blank">
+              <i class="fab fa-github fa-2x github-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/demand-dashboard.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Forecasting Dashboard</h5>
+            <p class="card-text">
+              NextJS web application that utilizes AWS Sagemaker for model deployment and retraining<br>
+              <em>(Submission for LifeHack 2024)</em>
+            </p>
+            <span class="badge badge-pill badge-primary">NextJS</span>
+            <span class="badge badge-pill badge-primary">AWS Lambda</span>
+            <span class="badge badge-pill badge-primary">AWS SageMaker</span>
+            <span class="badge badge-pill badge-primary">AWS StepFunctions</span>
+            <span class="badge badge-pill badge-primary">AWS API Gateway</span>
+
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/yourprofile/project1" class="mt-auto" target="_blank">
+              <i class="fab fa-github fa-2x github-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/fnbuddy.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">FnBuddy</h5>
+            <p class="card-text">
+              FnBuddy is an innovative employee contact management application designed specifically
+              for restaurant managers. <br>
+              <em>(School Project)</em>
+            </p>
+            <span class="badge badge-pill badge-primary">JavaFX</span>
+            <span class="badge badge-pill badge-primary">JUnit</span>
+            <span class="badge badge-pill badge-primary">Gradle</span>
+            <span class="badge badge-pill badge-primary">GitHub Actions</span>
+
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/yourprofile/project1" class="mt-auto" target="_blank">
+              <i class="fab fa-github fa-2x github-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="images/naisc.jpeg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">National AI Student Challenge</h5>
+            <p class="card-text">
+              Performed instruction fine-tuning on the Llama-2-7b-chat LLM with a team of 4 using Amazon Sagemaker and
+              tied at 6th place among 60 teams with an accuracy of 91%.<br>
+            </p>
+            <span class="badge badge-pill badge-primary">AWS SageMaker Jumpstart</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/yourprofile/project1" class="mt-auto" target="_blank">
+              <i class="fab fa-github fa-2x github-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 rounded">
+          <img src="images/melody-mentor.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Melody Mentor</h5>
+            <p class="card-text">
+              Cross-Platform guitar tablature application using React Native with cloud storage integration using
+              Firebase<br>
+              <em>(School Project)</em>
+            </p>
+            <span class="badge badge-pill badge-primary">React Native</span>
+            <span class="badge badge-pill badge-primary">Firebase</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/yourprofile/project1" class="mt-auto" target="_blank">
+              <i class="fab fa-github fa-2x github-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="container my-5 py-5">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Bachelor of Computing in Computer Science</h3>
+        <p>National University of Singapore, July 2022 - Present (Expected July 2026)</p>
+      </div>
+      <div class="timeline-item">
+        <h3>A Levels</h3>
+        <p>Anderson Serangoon Junior College, Jan 2018 - Dec 2019</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="container my-5 py-5">
+    <h2>Skills</h2>
+    <span>Languages: </span>
+    <span class="badge badge-pill badge-primary">TypeScript</span>
+    <span class="badge badge-pill badge-primary">JavaScript</span>
+    <span class="badge badge-pill badge-primary">Dart</span>
+    <span class="badge badge-pill badge-primary">Java</span>
+    <span class="badge badge-pill badge-primary">Python</span>
+    <span class="badge badge-pill badge-primary">SQL</span>
+    <br>
+    <span>Frameworks: </span>
+    <span class="badge badge-pill badge-primary">Flutter</span>
+    <span class="badge badge-pill badge-primary">NextJS</span>
+    <span class="badge badge-pill badge-primary">Flask</span>
+    <br>
+    <span>Tools: </span>
+    <span class="badge badge-pill badge-primary">Git</span>
+    <span class="badge badge-pill badge-primary">Github Actions</span>
+    <span class="badge badge-pill badge-primary">RestAPIs</span>
+    <span class="badge badge-pill badge-primary">GraphQL</span>
+    <span class="badge badge-pill badge-primary">AWS</span>
+    <span class="badge badge-pill badge-primary">Figma</span>
+    <br>
+    <span>Libraries: </span>
+    <span class="badge badge-pill badge-primary">Pandas</span>
+    <span class="badge badge-pill badge-primary">NumPy</span>
+    <span class="badge badge-pill badge-primary">Matplotlib</span>
+    <span class="badge badge-pill badge-primary">LangChain</span>
+  </section>
+
+  <section id="contact" class="container my-5 py-5">
+    <h2>Contact</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <a href="https://github.com/martinng01" id="github" class="text-white mx-2" target="_blank">
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+    <a href="https://linkedin.com/in/martinng01" id="linkedin" class="text-white mx-2" target="_blank">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const hero = document.getElementById('hero');
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      // Adjust the opacity based on the scroll position
+      hero.style.opacity = Math.max(1 - (scrollPosition / (windowHeight / 2)), 0);
+    });
+  </script>
+
+</body>
+
+</html>

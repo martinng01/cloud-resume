@@ -1,0 +1,75 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  overscroll-behavior: none;
+}
+
+/* Ensure the GitHub icon is grey */
+.card-footer .github-icon {
+  color: grey !important;
+}
+
+/* Change GitHub icon color on hover */
+.card-footer .github-icon:hover {
+  color: darkgrey !important; /* Change to a lighter grey on hover */
+}
+
+footer a {
+  text-decoration: none !important;
+}
+
+footer a i {
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+footer a#linkedin:hover i {
+  color: #2d64bc; /* LinkedIn blue color */
+}
+
+footer a#github:hover i {
+  color: #808080; /* LinkedIn blue color */
+}
+
+.badge-primary {
+  background-color: #58A4B0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex: 1 1 auto; /* Makes sure the card body grows to fill space */
+}
+
+.card-img-top {
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.btn {
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.timeline {
+  border-left: 3px solid #80A1D4;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  background-color: #80A1D4;
+  border-radius: 50%;
+  content: '';
+  height: 20px;
+  left: -31px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
