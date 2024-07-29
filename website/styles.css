@@ -22,12 +22,17 @@ footer a i {
   transition: color 0.3s; /* Smooth color transition */
 }
 
-footer a#linkedin:hover i {
-  color: #2d93bc; /* LinkedIn blue color */
+#linkedin-hero:hover i {
+  color: #2d93bc;
 }
 
-footer a#github:hover i {
-  color: #808080; /* LinkedIn blue color */
+#github-hero:hover i {
+  color: #808080;
+}
+
+#linkedin-hero i,
+#github-hero i {
+  color: black;
 }
 
 .badge-primary {
@@ -37,15 +42,24 @@ footer a#github:hover i {
 .card {
   display: flex;
   flex-direction: column;
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure child elements don't overflow the rounded corners */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Expand card on hover */
 }
 
 .card-body {
   flex: 1 1 auto; /* Makes sure the card body grows to fill space */
+  padding: 20px;
 }
 
 .card-img-top {
   height: 200px; /* Adjust height as needed */
   object-fit: cover; /* Ensures the image covers the area */
+  border-radius: 10px;
 }
 
 .btn {
