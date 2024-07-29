@@ -4,35 +4,31 @@ body {
   overscroll-behavior: none;
 }
 
-/* Ensure the GitHub icon is grey */
-.card-footer .github-icon {
+.github-icon,
+.linkedin-icon,
+.devpost-icon {
+  transition: transform 0.3s ease;
   color: grey !important;
+  text-decoration: none;
 }
 
-/* Change GitHub icon color on hover */
-.card-footer .github-icon:hover {
-  color: darkgrey !important; /* Change to a lighter grey on hover */
+.github-icon:hover {
+  transform: scale(1.1);
+  color: #c0c0c0 !important;
 }
 
-footer a {
+.linkedin-icon:hover {
+  transform: scale(1.1);
+  color: #2d93bc !important;
+}
+
+.devpost-icon:hover {
+  transform: scale(1.1);
+  color: #80a1d4 !important;
+}
+
+a {
   text-decoration: none !important;
-}
-
-footer a i {
-  transition: color 0.3s; /* Smooth color transition */
-}
-
-#linkedin-hero:hover i {
-  color: #2d93bc;
-}
-
-#github-hero:hover i {
-  color: #808080;
-}
-
-#linkedin-hero i,
-#github-hero i {
-  color: black;
 }
 
 .badge-primary {
