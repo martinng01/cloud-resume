@@ -375,6 +375,7 @@
     <script>
       window.addEventListener("scroll", function () {
         const hero = document.getElementById("hero");
+        const body = document.getElementById("body");
         const scrollPosition = window.scrollY;
         const windowHeight = window.innerHeight;
 
@@ -383,6 +384,17 @@
           1 - scrollPosition / (windowHeight / 2),
           0
         );
+
+        // Adjust the background color based on the scroll position
+        const heroHeight = hero.offsetHeight;
+        const scrollFraction = Math.min(scrollPosition / headerHeight, 1);
+
+        document.body.style.backgroundImage = `linear-gradient(
+          to right,
+          rgba(255, 236, 210, ${1 - scrollFraction}) 0%,
+          rgba(252, 182, 159, ${1 - scrollFraction}) 100%,
+          rgba(255, 255, 255, ${scrollFraction}) 100%
+        )`;
       });
     </script>
   </body>
