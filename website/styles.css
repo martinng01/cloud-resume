@@ -184,3 +184,9 @@ a {
 .project-card.expanded {
   animation: expandFromNothing 0.3s ease-out forwards; 
 }
+
+.project-card .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
