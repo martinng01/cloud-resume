@@ -445,67 +445,13 @@
       </form>
     </section>
 
-    <script>
-      window.addEventListener("scroll", function () {
-        const hero = document.getElementById("hero");
-        const scrollPosition = window.scrollY;
+    <section
+      id="visitor-counter"
+      class="container align-items-center justify-content-center my-5 py-5 text-center"
+    >
+      <p id="visitor-count">Loading visitor count...</p>
+    </section>
 
-        // Adjust the background color based on the scroll position
-        const headerHeight = hero.offsetHeight;
-        const scrollFraction = Math.min(scrollPosition / headerHeight, 1);
-
-        document.body.style.backgroundImage = `linear-gradient(
-          to right,
-          rgba(255, 236, 210, ${1 - scrollFraction * 0.6}) 0%,
-          rgba(252, 182, 159, ${1 - scrollFraction * 0.6}) 100%,
-          rgba(255, 255, 255, ${scrollFraction * 0.6}) 100%
-        )`;
-        hero.style.opacity = Math.max(1 - scrollFraction * 1.2, 0);
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const timelineItems = document.querySelectorAll(".timeline-card");
-        const observerOptions = {
-          threshold: 0.1,
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target); // Stop observing after animation is triggered
-            }
-          });
-        }, observerOptions);
-
-        timelineItems.forEach((item) => {
-          observer.observe(item);
-        });
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const cards = document.querySelectorAll(".project-card");
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("expanded");
-                observer.unobserve(entry.target); // Stop observing once the animation is applied
-              }
-            });
-          },
-          { threshold: 0.1 }
-        ); // Adjust the threshold as needed
-
-        cards.forEach((card) => {
-          observer.observe(card);
-        });
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
