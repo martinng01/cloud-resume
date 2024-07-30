@@ -1,3 +1,83 @@
+@keyframes smoky-shadow {
+  0% {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  10% {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
+  }
+  20% {
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.14);
+  }
+  30% {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.16);
+  }
+  40% {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
+  }
+  50% {
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  }
+  60% {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
+  }
+  70% {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.16);
+  }
+  80% {
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.14);
+  }
+  90% {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
+  }
+  100% {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes fadeInFromBelow {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes expandFromNothing {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#hero {
+  animation: fadeInFromBelow 1.5s ease-out forwards;
+}
+
+
 body {
   font-family: "Inter", sans-serif;
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
@@ -6,7 +86,8 @@ body {
 
 .github-icon,
 .linkedin-icon,
-.devpost-icon {
+.devpost-icon,
+.external-site-icon {
   transition: transform 0.3s ease;
   color: grey !important;
   text-decoration: none;
@@ -24,7 +105,12 @@ body {
 
 .devpost-icon:hover {
   transform: scale(1.1);
-  color: #80a1d4 !important;
+  color: #6c9adf !important;
+}
+
+.external-site-icon:hover {
+  transform: scale(1.1);
+  color: #80d4bb !important;
 }
 
 a {
@@ -41,10 +127,14 @@ a {
   border-radius: 10px; /* Rounded corners */
   overflow: hidden; /* Ensure child elements don't overflow the rounded corners */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .card:hover {
   transform: scale(1.05); /* Expand card on hover */
+  animation: smoky-shadow 3s infinite;
 }
 
 .card-body {
@@ -58,10 +148,6 @@ a {
   border-radius: 10px;
 }
 
-.btn {
-  margin-top: auto; /* Pushes the button to the bottom */
-}
-
 .timeline {
   border-left: 3px solid #80a1d4;
   padding-left: 20px;
@@ -69,8 +155,18 @@ a {
 }
 
 .timeline-item {
-  margin-bottom: 30px;
   position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-card{
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.timeline-card.visible {
+  animation: slideInFromRight 0.5s ease-out forwards;
 }
 
 .timeline-item::before {
@@ -82,4 +178,9 @@ a {
   position: absolute;
   top: 0;
   width: 20px;
+}
+
+
+.project-card.expanded {
+  animation: expandFromNothing 0.3s ease-out forwards; 
 }
