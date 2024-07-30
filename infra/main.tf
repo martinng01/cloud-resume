@@ -25,7 +25,7 @@ resource "aws_iam_policy" "policy" {
       {
         "Effect" : "Allow",
         "Action" : [
-          "dynamodb:UpdateItem",
+          "dynamodb:PutItem",
           "dynamodb:GetItem"
         ],
         "Resource" : "arn:aws:dynamodb:*:*:table/cloud-resume"
