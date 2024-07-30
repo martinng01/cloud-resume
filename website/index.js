@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch(
-    "https://yst3bd5wd2xd2uotye5m4dteb40xvfsr.lambda-url.ap-southeast-1.on.aws/"
+    "https://ql7clnksoqep7jixmf6ontlkxu0kyhnu.lambda-url.ap-southeast-1.on.aws/"
   )
     .then((response) => response.json())
     .then((data) => {
