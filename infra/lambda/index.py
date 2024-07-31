@@ -1,8 +1,9 @@
 import json
 import boto3
 
-dynamodb = boto3.resource('dynamodb')
+dynamodb = boto3.resource('dynamodb', region_name='ap-southeast-1')
 table = dynamodb.Table('cloud-resume')
+
 
 def lambda_handler(event, context):
     response = table.get_item(
@@ -16,7 +17,7 @@ def lambda_handler(event, context):
         Item={
             'id': '1',
             'views': num_views
-        }    
+        }
     )
-    
+
     return num_views
