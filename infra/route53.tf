@@ -8,5 +8,5 @@ resource "aws_route53_record" "site_domain" {
   type    = "CNAME"
   ttl     = 300
 
-  records = ["martinngjk.com"]
+  records = ["${var.domain_name}"]
 }
