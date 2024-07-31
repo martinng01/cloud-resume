@@ -1,4 +1,12 @@
 terraform {
+  cloud {
+    organization = "martin-terraform-cloud"
+
+    workspaces {
+      name = "martin-cloud-resume"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -11,5 +19,5 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region  = "${var.region}"
+  region  = var.region
 }
