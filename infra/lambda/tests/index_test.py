@@ -56,7 +56,7 @@ def test_lambda_increments_viewer_count(table):
         }
     )
 
-    from index import lambda_handler
+    from ..index import lambda_handler
     response = lambda_handler({}, {})
     assert response == 1
 
