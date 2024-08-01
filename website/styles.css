@@ -112,7 +112,8 @@ body {
 .github-icon,
 .linkedin-icon,
 .devpost-icon,
-.external-site-icon {
+.external-site-icon,
+.email-icon {
   transition: transform 0.3s ease;
   color: grey !important;
   text-decoration: none;
@@ -131,6 +132,11 @@ body {
 .devpost-icon:hover {
   transform: scale(1.1);
   color: #6c9adf !important;
+}
+
+.email-icon:hover {
+  transform: scale(1.1);
+  color: #e8b75f !important;
 }
 
 .external-site-icon:hover {
