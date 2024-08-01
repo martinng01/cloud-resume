@@ -27,6 +27,20 @@ jobs:
         run: |
           pytest --cov=infra/lambda
 
+  frontend-testing:
+    runs-on: ubuntu-latest
+    name: Frontend Testing
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          project: ./website/tests
+        env:
+          CYPRESS_VIDEO_RECORDING: 0
+
   terraform:
     name: Terraform Infrastructure
     runs-on: ubuntu-latest
