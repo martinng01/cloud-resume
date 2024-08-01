@@ -73,6 +73,31 @@
   }
 }
 
+@keyframes shootIn {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.badge-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: shootIn 0.5s forwards;
+  animation-play-state: paused; /* Pause animation initially */
+}
+
+.badge-animate.show {
+  animation-play-state: running; /* Run animation when scrolled into view */
+}
+
 #hero {
   animation: fadeInFromBelow 1.5s ease-out forwards;
 }

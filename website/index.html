@@ -1,478 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <section
-      id="hero"
-      class="container d-flex align-items-center justify-content-center min-vh-100"
-    >
-      <div
-        class="row flex-lg-row-reverse align-items-center justify-content-center"
-      >
-        <div class="col-10 col-sm-8 col-lg-6 text-center my-4 my-lg-0">
-          <img
-            src="images/profile.jpeg"
-            alt="profile picture"
-            class="rounded-circle img-fluid shadow"
-          />
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            Welcome to My Portfolio
-          </h1>
-          <p class="lead">
-            I'm Martin 👋, a passionate Year 3 student at the National
-            University of Singapore studying Computer Science, and I love what I
-            do 💖. <br /><br />
-            I am particularly interested in AI/ML 🤖 and cloud infrastructure
-            ⛅. Starting new projects and learning something new every time 📚
-            is a hobby of mine, and I am always working on improving myself.
-          </p>
-          <a href="https://github.com/martinng01" class="mx-2" target="_blank">
-            <i class="fab fa-github fa-2x github-icon"></i>
-          </a>
-          <a
-            href="https://linkedin.com/in/martinng01"
-            class="mx-2"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin fa-2x linkedin-icon"></i>
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section id="hero" class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="row flex-lg-row-reverse align-items-center justify-content-center">
+      <div class="col-10 col-sm-8 col-lg-6 text-center my-4 my-lg-0">
+        <img src="images/profile.jpeg" alt="profile picture" class="rounded-circle img-fluid shadow" />
       </div>
-    </section>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+          Welcome to My Portfolio
+        </h1>
+        <p class="lead">
+          I'm Martin 👋, a passionate Year 3 student at the National
+          University of Singapore studying Computer Science, and I love what I
+          do 💖. <br /><br />
+          I am particularly interested in AI/ML 🤖 and cloud infrastructure
+          ⛅. Starting new projects and learning something new every time 📚
+          is a hobby of mine, and I am always working on improving myself.
+        </p>
+        <a href="https://github.com/martinng01" class="mx-2" target="_blank">
+          <i class="fab fa-github fa-2x github-icon"></i>
+        </a>
+        <a href="https://linkedin.com/in/martinng01" class="mx-2" target="_blank">
+          <i class="fab fa-linkedin fa-2x linkedin-icon"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section
-      id="experience"
-      class="container align-items-center justify-content-center min-vh-100 my-5 py-5"
-    >
-      <h2>Experience 💼</h2>
-      <div class="timeline mt-4">
-        <div class="timeline-item">
-          <div class="timeline-card">
-            <div class="card ml-3">
-              <div class="card-body">
-                <h3>Artificial Intelligence Intern</h3>
-                <h4 class="lead">
-                  <em>
-                    A*STAR Aural & Language Intelligence Department, May 2024 -
-                    Aug 2024
-                  </em>
-                </h4>
-                <p>
-                  Developed a method to enhance translation quality using
-                  <b>Retrieval-Augmented Generation (RAG)</b> and
-                  <b>Large Language Models (LLMs)</b>, which improved
-                  translation accuracy by up to <b>17%</b> evaluated with BLEU
-                  scores.
-                </p>
-                <p>
-                  Implemented and deployed a <b>Django</b>-based translation
-                  website that has been used for identifying common translation
-                  errors with LLMs and enhancing translation quality from
-                  lightweight NMT systems.
-                </p>
-                <p>
-                  <b>Fine-tuned LLMs</b> using
-                  <b>instruction-based methods</b> for
-                  <b>Text-Style Transfer</b> tasks.
-                </p>
-                <span class="badge badge-pill badge-primary">RAG</span>
-                <span class="badge badge-pill badge-primary">LangChain</span>
-                <span class="badge badge-pill badge-primary">LLM</span>
-                <span class="badge badge-pill badge-primary">Django</span>
-                <span class="badge badge-pill badge-primary">Fine-Tuning</span>
-                <span class="badge badge-pill badge-primary">HuggingFace</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-card">
-            <div class="card ml-3">
-              <div class="card-body">
-                <h3>Software Engineering Intern</h3>
-                <h4 class="lead"><em>ANZElectric, Dec 2023 - May 2024</em></h4>
-                <p>
-                  Created multiple cross-platform, user-facing applications
-                  using
-                  <b>Flutter</b> for various hardware devices.
-                </p>
-                <p>
-                  Designed the application's <b>UI/UX</b> using <b>Figma</b>,
-                  ensuring intuitive user experiences were delivered
-                  consistently.
-                </p>
-                <p>
-                  Developed microcontroller programs enabling seamless Bluetooth
-                  communication with mobile devices.
-                </p>
-                <span class="badge badge-pill badge-primary">Flutter</span>
-                <span class="badge badge-pill badge-primary">Figma</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-card">
-            <div class="card ml-3">
-              <div class="card-body">
-                <h3>Artificial Intelligence Intern</h3>
-                <h4 class="lead">
-                  <em>
-                    A*STAR Aural & Language Intelligence Department, Jan 2022 -
-                    June 2022
-                  </em>
-                </h4>
-                <p>
-                  <b>Trained and optimized hyperparameters</b> for an AI Machine
-                  Translation model, attaining a notable <b>70%</b> accuracy.
-                </p>
-                <p>
-                  Conducted thorough <b>data cleaning</b> and
-                  <b>preprocessing</b> on large datasets and employed
-                  <b>Python</b> for <b>web scraping</b> to gather additional
-                  data from various websites.
-                </p>
-                <p>
-                  Integrated the developed model with <b>REST APIs</b>,
-                  facilitating the creation of a user-friendly translation
-                  website with seamless functionality using <b>Flask</b>.
-                </p>
-                <span class="badge badge-pill badge-primary">Web Scraping</span>
-                <span class="badge badge-pill badge-primary">Python</span>
-                <span class="badge badge-pill badge-primary">Flask</span>
-              </div>
+  <section id="experience" class="container align-items-center justify-content-center min-vh-100 my-5 py-5">
+    <h2>Experience 💼</h2>
+    <div class="timeline mt-4">
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="card ml-3">
+            <div class="card-body">
+              <h3>Artificial Intelligence Intern</h3>
+              <h4 class="lead">
+                <em>
+                  A*STAR Aural & Language Intelligence Department, May 2024 -
+                  Aug 2024
+                </em>
+              </h4>
+              <p>
+                Developed a method to enhance translation quality using
+                <b>Retrieval-Augmented Generation (RAG)</b> and
+                <b>Large Language Models (LLMs)</b>, which improved
+                translation accuracy by up to <b>17%</b> evaluated with BLEU
+                scores.
+              </p>
+              <p>
+                Implemented and deployed a <b>Django</b>-based translation
+                website that has been used for identifying common translation
+                errors with LLMs and enhancing translation quality from
+                lightweight NMT systems.
+              </p>
+              <p>
+                <b>Fine-tuned LLMs</b> using
+                <b>instruction-based methods</b> for
+                <b>Text-Style Transfer</b> tasks.
+              </p>
+              <span class="badge badge-pill badge-primary">RAG</span>
+              <span class="badge badge-pill badge-primary">LangChain</span>
+              <span class="badge badge-pill badge-primary">LLM</span>
+              <span class="badge badge-pill badge-primary">Django</span>
+              <span class="badge badge-pill badge-primary">Fine-Tuning</span>
+              <span class="badge badge-pill badge-primary">HuggingFace</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section
-      id="projects"
-      class="container align-items-center justify-content-center min-vh-100 my-5 py-5"
-    >
-      <h2>Projects 🛠</h2>
-      <div class="row mt-4">
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="images/sales-helper.png"
-                  class="card-img-top"
-                  alt="Sales Helper"
-                />
-                <h5 class="card-title mt-4">Sales Helper</h5>
-                <p class="card-text">
-                  This video calling web application enhances sales interactions
-                  by providing real-time, accurate data and leveraging AI for
-                  optimized sales strategies. <br />
-                  <em>(Continued from submission for TikTok Techjam 2024)</em>
-                </p>
-                <span class="badge badge-pill badge-primary">OpenCV</span>
-                <span class="badge badge-pill badge-primary">Flask</span>
-                <span class="badge badge-pill badge-primary">WebSockets</span>
-                <span class="badge badge-pill badge-primary">React</span>
-                <span class="badge badge-pill badge-primary">LangChain</span>
-                <span class="badge badge-pill badge-primary">HuggingFace</span>
-                <span class="badge badge-pill badge-primary">scikit-learn</span>
-                <span class="badge badge-pill badge-primary">RAG</span>
-              </div>
-              <div class="card-footer">
-                <a
-                  href="https://github.com/martinng01/sales-helper"
-                  class="mt-auto mx-1"
-                  target="_blank"
-                >
-                  <i class="fab fa-github fa-2x github-icon"></i>
-                </a>
-                <a
-                  href="https://devpost.com/software/sales-helper"
-                  class="mt-auto mx-1"
-                  target="_blank"
-                >
-                  <i class="fab fa-dev fa-2x devpost-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="images/demand-dashboard.png"
-                  class="card-img-top"
-                  alt="Demand Dashboard"
-                />
-                <h5 class="card-title mt-4">Forecasting Dashboard</h5>
-                <p class="card-text">
-                  NextJS web application that utilizes AWS Sagemaker for model
-                  deployment and retraining<br />
-                  <em>(Submission for LifeHack 2024)</em>
-                </p>
-                <span class="badge badge-pill badge-primary">NextJS</span>
-                <span class="badge badge-pill badge-primary">AWS Lambda</span>
-                <span class="badge badge-pill badge-primary"
-                  >AWS SageMaker</span
-                >
-                <span class="badge badge-pill badge-primary"
-                  >AWS StepFunctions</span
-                >
-                <span class="badge badge-pill badge-primary"
-                  >AWS API Gateway</span
-                >
-              </div>
-              <div class="card-footer">
-                <a
-                  href="https://github.com/martinng01/demand-dashboard"
-                  class="mt-auto mx-1"
-                  target="_blank"
-                >
-                  <i class="fab fa-github fa-2x github-icon"></i>
-                </a>
-                <a
-                  href="https://devpost.com/software/bhq-bros"
-                  class="mt-auto mx-1"
-                  target="_blank"
-                >
-                  <i class="fab fa-dev fa-2x devpost-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="images/fnbuddy.png"
-                  class="card-img-top"
-                  alt="Project 3"
-                />
-                <h5 class="card-title mt-4">FnBuddy</h5>
-                <p class="card-text">
-                  FnBuddy is an innovative employee contact management
-                  application designed specifically for restaurant managers.
-                  <br />
-                  <em>(School Project)</em>
-                </p>
-                <span class="badge badge-pill badge-primary">JavaFX</span>
-                <span class="badge badge-pill badge-primary">JUnit</span>
-                <span class="badge badge-pill badge-primary">Gradle</span>
-                <span class="badge badge-pill badge-primary"
-                  >GitHub Actions</span
-                >
-              </div>
-              <div class="card-footer">
-                <a
-                  href="https://github.com/AY2324S2-CS2103T-T17-4/tp"
-                  class="mt-automx-1"
-                  target="_blank"
-                >
-                  <i class="fab fa-github fa-2x github-icon"></i>
-                </a>
-                <a
-                  href="https://ay2324s2-cs2103t-t17-4.github.io/tp/"
-                  class="mt-auto mx-1"
-                  target="_blank"
-                >
-                  <i class="fa-solid fa-book fa-2x external-site-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="images/naisc.jpg"
-                  class="card-img-top"
-                  alt="Project 3"
-                />
-                <h5 class="card-title mt-4">National AI Student Challenge</h5>
-                <p class="card-text">
-                  Performed instruction fine-tuning and hyperparmeter tuning on
-                  an LLM with a team of 4 using Amazon Sagemaker and tied at 6th
-                  place among 60 teams with an accuracy of 91%. Datasets were
-                  synthetically generated using Prompt Engineering
-                  techniques.<br />
-                </p>
-                <span class="badge badge-pill badge-primary"
-                  >AWS SageMaker</span
-                >
-                <span class="badge badge-pill badge-primary"
-                  >Prompt Engineering</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="project-card h-100">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="images/melody-mentor.png"
-                  class="card-img-top"
-                  alt="Project 3"
-                />
-                <h5 class="card-title mt-4">Melody Mentor</h5>
-                <p class="card-text">
-                  Cross-Platform guitar tablature application using React Native
-                  with cloud storage integration using Firebase<br />
-                  <em>(School Project)</em>
-                </p>
-                <span class="badge badge-pill badge-primary">React Native</span>
-                <span class="badge badge-pill badge-primary">Firebase</span>
-              </div>
-              <div class="card-footer">
-                <a
-                  href="https://github.com/mahadhir247/melody-mentor"
-                  class="mt-auto"
-                  target="_blank"
-                >
-                  <i class="fab fa-github fa-2x github-icon"></i>
-                </a>
-              </div>
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="card ml-3">
+            <div class="card-body">
+              <h3>Software Engineering Intern</h3>
+              <h4 class="lead"><em>ANZElectric, Dec 2023 - May 2024</em></h4>
+              <p>
+                Created multiple cross-platform, user-facing applications
+                using
+                <b>Flutter</b> for various hardware devices.
+              </p>
+              <p>
+                Designed the application's <b>UI/UX</b> using <b>Figma</b>,
+                ensuring intuitive user experiences were delivered
+                consistently.
+              </p>
+              <p>
+                Developed microcontroller programs enabling seamless Bluetooth
+                communication with mobile devices.
+              </p>
+              <span class="badge badge-pill badge-primary">Flutter</span>
+              <span class="badge badge-pill badge-primary">Figma</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section
-      id="education"
-      class="container align-items-center justify-content-center my-5 py-5"
-    >
-      <h2>Education 🎓</h2>
-      <div class="timeline mt-4">
-        <div class="timeline-item">
-          <div class="timeline-card">
-            <div class="card ml-3">
-              <div class="card-body">
-                <h3>Bachelor of Computing in Computer Science</h3>
-                <p>July 2022 - Present (Expected July 2026)</p>
-                <p>National University of Singapore</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-card">
-            <div class="card ml-3">
-              <div class="card-body">
-                <h3>A Levels</h3>
-                <p>Jan 2018 - Dec 2019</p>
-                <p>Anderson Serangoon Junior College</p>
-              </div>
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="card ml-3">
+            <div class="card-body">
+              <h3>Artificial Intelligence Intern</h3>
+              <h4 class="lead">
+                <em>
+                  A*STAR Aural & Language Intelligence Department, Jan 2022 -
+                  June 2022
+                </em>
+              </h4>
+              <p>
+                <b>Trained and optimized hyperparameters</b> for an AI Machine
+                Translation model, attaining a notable <b>70%</b> accuracy.
+              </p>
+              <p>
+                Conducted thorough <b>data cleaning</b> and
+                <b>preprocessing</b> on large datasets and employed
+                <b>Python</b> for <b>web scraping</b> to gather additional
+                data from various websites.
+              </p>
+              <p>
+                Integrated the developed model with <b>REST APIs</b>,
+                facilitating the creation of a user-friendly translation
+                website with seamless functionality using <b>Flask</b>.
+              </p>
+              <span class="badge badge-pill badge-primary">Web Scraping</span>
+              <span class="badge badge-pill badge-primary">Python</span>
+              <span class="badge badge-pill badge-primary">Flask</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section
-      id="skills"
-      class="container align-items-center justify-content-center my-5 py-5"
-    >
-      <h2>Skills 🤓</h2>
-      <div class="mt-4">
-        <span>Languages: </span>
-        <span class="badge badge-pill badge-primary">TypeScript</span>
-        <span class="badge badge-pill badge-primary">JavaScript</span>
-        <span class="badge badge-pill badge-primary">Dart</span>
-        <span class="badge badge-pill badge-primary">Java</span>
-        <span class="badge badge-pill badge-primary">Python</span>
-        <span class="badge badge-pill badge-primary">SQL</span>
-        <br />
-        <span>Frameworks: </span>
-        <span class="badge badge-pill badge-primary">Flutter</span>
-        <span class="badge badge-pill badge-primary">NextJS</span>
-        <span class="badge badge-pill badge-primary">Flask</span>
-        <br />
-        <span>Tools: </span>
-        <span class="badge badge-pill badge-primary">Git</span>
-        <span class="badge badge-pill badge-primary">Github Actions</span>
-        <span class="badge badge-pill badge-primary">RestAPIs</span>
-        <span class="badge badge-pill badge-primary">GraphQL</span>
-        <span class="badge badge-pill badge-primary">Figma</span>
-        <br />
-        <span>Libraries: </span>
-        <span class="badge badge-pill badge-primary">Pandas</span>
-        <span class="badge badge-pill badge-primary">NumPy</span>
-        <span class="badge badge-pill badge-primary">Matplotlib</span>
-        <span class="badge badge-pill badge-primary">LangChain</span>
-        <br />
-        <span>AWS Services:</span>
-        <span class="badge badge-pill badge-primary">Lambda</span>
-        <span class="badge badge-pill badge-primary">S3</span>
-        <span class="badge badge-pill badge-primary">SageMaker</span>
-        <span class="badge badge-pill badge-primary">CloudFront</span>
-        <span class="badge badge-pill badge-primary">Route 53</span>
-        <span class="badge badge-pill badge-primary">API Gateway</span>
-        <span class="badge badge-pill badge-primary">Step Functions</span>
+  <section id="projects" class="container align-items-center justify-content-center min-vh-100 my-5 py-5">
+    <h2>Projects 🛠</h2>
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="project-card h-100">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/cloud-resume.png" class="card-img-top" alt="Cloud Resume" />
+              <h5 class="card-title mt-4">Cloud Resume</h5>
+              <p class="card-text">
+                My portfolio website built on AWS with DevOps practices, as
+                part of the Cloud Resume Challenge.
+              </p>
+              <span class="badge badge-pill badge-primary">AWS CloudFont</span>
+              <span class="badge badge-pill badge-primary">AWS Route 53</span>
+              <span class="badge badge-pill badge-primary">AWS S3</span>
+              <span class="badge badge-pill badge-primary">AWS Lambda</span>
+              <span class="badge badge-pill badge-primary">AWS DynamoDB</span>
+              <span class="badge badge-pill badge-primary">Terraform</span>
+              <span class="badge badge-pill badge-primary">GitHub Actions</span>
+              <span class="badge badge-pill badge-primary">Cypress</span>
+              <span class="badge badge-pill badge-primary">pytest</span>
+              <span class="badge badge-pill badge-primary">HTML</span>
+              <span class="badge badge-pill badge-primary">CSS</span>
+              <span class="badge badge-pill badge-primary">JS</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/martinng01/cloud-resume" class="mt-auto mx-1" target="_blank">
+                <i class="fab fa-github fa-2x github-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <section
-      id="contact"
-      class="container align-items-center justify-content-center my-5 py-5"
-    >
-      <h2>Let's get in touch! 🤝</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" required />
+      <div class="col-md-4 mb-4">
+        <div class="project-card h-100">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/sales-helper.png" class="card-img-top" alt="Sales Helper" />
+              <h5 class="card-title mt-4">Sales Helper</h5>
+              <p class="card-text">
+                This video calling web application enhances sales interactions
+                by providing real-time, accurate data and leveraging AI for
+                optimized sales strategies. <br />
+                <em>(Continued from submission for TikTok Techjam 2024)</em>
+              </p>
+              <span class="badge badge-pill badge-primary">OpenCV</span>
+              <span class="badge badge-pill badge-primary">Flask</span>
+              <span class="badge badge-pill badge-primary">WebSockets</span>
+              <span class="badge badge-pill badge-primary">React</span>
+              <span class="badge badge-pill badge-primary">LangChain</span>
+              <span class="badge badge-pill badge-primary">HuggingFace</span>
+              <span class="badge badge-pill badge-primary">scikit-learn</span>
+              <span class="badge badge-pill badge-primary">RAG</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/martinng01/sales-helper" class="mt-auto mx-1" target="_blank">
+                <i class="fab fa-github fa-2x github-icon"></i>
+              </a>
+              <a href="https://devpost.com/software/sales-helper" class="mt-auto mx-1" target="_blank">
+                <i class="fab fa-dev fa-2x devpost-icon"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="project-card h-100">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/demand-dashboard.png" class="card-img-top" alt="Demand Dashboard" />
+              <h5 class="card-title mt-4">Forecasting Dashboard</h5>
+              <p class="card-text">
+                NextJS web application that utilizes AWS Sagemaker for model
+                deployment and retraining<br />
+                <em>(Submission for LifeHack 2024)</em>
+              </p>
+              <span class="badge badge-pill badge-primary">NextJS</span>
+              <span class="badge badge-pill badge-primary">AWS Lambda</span>
+              <span class="badge badge-pill badge-primary">AWS SageMaker</span>
+              <span class="badge badge-pill badge-primary">AWS StepFunctions</span>
+              <span class="badge badge-pill badge-primary">AWS API Gateway</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/martinng01/demand-dashboard" class="mt-auto mx-1" target="_blank">
+                <i class="fab fa-github fa-2x github-icon"></i>
+              </a>
+              <a href="https://devpost.com/software/bhq-bros" class="mt-auto mx-1" target="_blank">
+                <i class="fab fa-dev fa-2x devpost-icon"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea
-            class="form-control"
-            id="message"
-            rows="3"
-            required
-          ></textarea>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="project-card h-100">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/fnbuddy.png" class="card-img-top" alt="Project 3" />
+              <h5 class="card-title mt-4">FnBuddy</h5>
+              <p class="card-text">
+                FnBuddy is an innovative employee contact management
+                application designed specifically for restaurant managers.
+                <br />
+                <em>(School Project)</em>
+              </p>
+              <span class="badge badge-pill badge-primary">JavaFX</span>
+              <span class="badge badge-pill badge-primary">JUnit</span>
+              <span class="badge badge-pill badge-primary">Gradle</span>
+              <span class="badge badge-pill badge-primary">GitHub Actions</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/AY2324S2-CS2103T-T17-4/tp" class="mt-automx-1" target="_blank">
+                <i class="fab fa-github fa-2x github-icon"></i>
+              </a>
+              <a href="https://ay2324s2-cs2103t-t17-4.github.io/tp/" class="mt-auto mx-1" target="_blank">
+                <i class="fa-solid fa-book fa-2x external-site-icon"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </section>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="project-card h-100">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/naisc.jpg" class="card-img-top" alt="Project 3" />
+              <h5 class="card-title mt-4">National AI Student Challenge</h5>
+              <p class="card-text">
+                Performed instruction fine-tuning and hyperparmeter tuning on
+                an LLM with a team of 4 using Amazon Sagemaker and tied at 6th
+                place among 60 teams with an accuracy of 91%. Datasets were
+                synthetically generated using Prompt Engineering
+                techniques.<br />
+              </p>
+              <span class="badge badge-pill badge-primary">AWS SageMaker</span>
+              <span class="badge badge-pill badge-primary">Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="project-card h-100">
+          <div class="card">
+            <div class="card-body">
+              <img src="images/melody-mentor.png" class="card-img-top" alt="Project 3" />
+              <h5 class="card-title mt-4">Melody Mentor</h5>
+              <p class="card-text">
+                Cross-Platform guitar tablature application using React Native
+                with cloud storage integration using Firebase<br />
+                <em>(School Project)</em>
+              </p>
+              <span class="badge badge-pill badge-primary">React Native</span>
+              <span class="badge badge-pill badge-primary">Firebase</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/mahadhir247/melody-mentor" class="mt-auto" target="_blank">
+                <i class="fab fa-github fa-2x github-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section
-      id="visitor-counter"
-      class="container align-items-center justify-content-center my-5 py-5 text-center"
-    >
-      <p id="visitor-count">Loading visitor count...</p>
-    </section>
+  <section id="education" class="container align-items-center justify-content-center my-5 py-5">
+    <h2>Education 🎓</h2>
+    <div class="timeline mt-4">
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="card ml-3">
+            <div class="card-body">
+              <h3>Bachelor of Computing in Computer Science</h3>
+              <p>July 2022 - Present (Expected July 2026)</p>
+              <p>National University of Singapore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <div class="card ml-3">
+            <div class="card-body">
+              <h3>A Levels</h3>
+              <p>Jan 2018 - Dec 2019</p>
+              <p>Anderson Serangoon Junior College</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="index.js"></script>
-  </body>
+  <section id="skills" class="container align-items-center justify-content-center my-5 py-5">
+    <h2>Skills 🤓</h2>
+    <div class="mt-4">
+      <span>Languages: </span>
+      <span class="badge badge-pill badge-primary badge-animate">TypeScript</span>
+      <span class="badge badge-pill badge-primary badge-animate">JavaScript</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.10s">Dart</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.40s">SQL</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.30s">Java</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.20s">Python</span>
+      <br />
+      <span>Frameworks: </span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.10s">Flutter</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.40s">Flask</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.35s">NextJS</span>
+      <br />
+      <span>Tools: </span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.20s">RestAPIs</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.45s">GraphQL</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.45s">Git</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.10s">Figma</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.25s">Github Actions</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.30s">Terraform</span>
+      <br />
+      badge-animate
+      <span>Libraries: </span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.30s">pytest</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.25s">Pandas</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.40s">LangChain</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.35s">Matplotlib</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.10s">NumPy</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.30s">Cypress</span>
+      <br />
+      <span>AWS Services:</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.35s">Lambda</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.30s">CloudFront</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.10s">Step Functions</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.25s">Route 53</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.00s">API Gateway</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.40s">SageMaker</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.30s">DynamoDB</span>
+      <span class="badge badge-pill badge-primary badge-animate" style="animation-delay: 0.50s">S3</span>
+    </div>
+  </section>
+
+  <section id="contact" class="container align-items-center justify-content-center my-5 py-5">
+    <h2>Let's get in touch! 🤝</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <section id="visitor-counter" class="container align-items-center justify-content-center my-5 py-5 text-center">
+    <p id="visitor-count">Loading visitor count...</p>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
 </html>

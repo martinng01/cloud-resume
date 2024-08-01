@@ -55,6 +55,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Select all badge elements
+  const badges = document.querySelectorAll(".badge-animate");
+
+  // Create an Intersection Observer instance
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Add the 'show' class when element is in view
+          entry.target.classList.add("show");
+          // Optional: Stop observing after the animation has been triggered
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      // Set the threshold to 0.1 so the animation triggers when 10% of the element is visible
+      threshold: 0.1,
+    }
+  );
+
+  // Observe each badge element
+  badges.forEach((badge) => {
+    observer.observe(badge);
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   fetch(
     "https://ql7clnksoqep7jixmf6ontlkxu0kyhnu.lambda-url.ap-southeast-1.on.aws/"
