@@ -1,22 +1,26 @@
-import { Image } from "@heroui/image";
-
-import { subtitle, title } from "@/components/primitives";
-
 export default function Hero() {
   return (
-    <div className="flex flex-row items-center justify-center h-screen w-full">
+    <div className="flex flex-row items-center justify-center h-screen w-full gap-8">
       <div className="max-w-lg text-center justify-center">
-        <span className={title()}>I&apos;m&nbsp;</span>
-        <span className={title({ color: "violet" })}>Martin</span>
-        <span className={title()}>,</span>
+        <h1 className="text-5xl font-bold">
+          <span>I&apos;m&nbsp;</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF1CF7] to-[#b249f8]">
+            Martin
+          </span>
+          <span>,</span>
+        </h1>
         <br />
-        <div className={subtitle({ class: "mt-4" })}>
+        <p className="text-2xl">
           Year 3 student at the National University of Singapore studying
           Computer Science.
-        </div>
+        </p>
       </div>
 
-      <Image height={300} radius="full" src="./profile.jpeg" width={300} />
+      <div className="avatar">
+        <div className="w-72 rounded-full">
+          <img src="./profile.jpeg" alt="" />
+        </div>
+      </div>
     </div>
   );
 }
