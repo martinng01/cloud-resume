@@ -2,6 +2,7 @@ import { Image } from "@heroui/image";
 
 import Hero from "./sections/Hero";
 import { Navbar } from "./components/navbar";
+import Work from "./sections/Work";
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       <main className="container mx-auto max-w-7xl px-6 flex-grow">
         <section className="flex flex-col items-center justify-center gap-4">
           <Hero />
+          <Work />
 
           <div
             aria-hidden="true"
