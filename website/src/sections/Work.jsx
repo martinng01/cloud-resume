@@ -111,7 +111,7 @@ function TimelineItem({ entry, index }) {
       >
         <time className="font-mono italic">{entry.date}</time>
         <div className="text-lg font-black">{entry.company}</div>
-        <div className="text-lg font-black">{entry.role}</div>
+        <div className="text-lg font-black italic">{entry.role}</div>
         <ul className="prose prose-p:m-2">
           {entry.description.map((point, index) => (
             <li key={index}>{<Markdown>{point}</Markdown>}</li>
