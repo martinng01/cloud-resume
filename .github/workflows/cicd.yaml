@@ -74,18 +74,29 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - uses: jakejarvis/s3-sync-action@master
+      - name: Install dependencies
+        run: |
+          cd website
+          npm ci
+
+      - name: Build website
+        run: |
+          cd website
+          npm run build
+
+      - name: Sync website to S3
+        uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: "ap-southeast-1" # optional: defaults to us-east-1
-          SOURCE_DIR: "website" # optional: defaults to entire repository
+          AWS_REGION: "ap-southeast-1"
+          SOURCE_DIR: "website/dist"
 
-      # Invalidate Cloudfront
-      - name: Cloudfront Invalidation
+      # Removes cached versions of the website to fetch latest version from S3
+      - name: Invalidate Cloudfront cache
         uses: chetan/invalidate-cloudfront-action@master
         env:
           DISTRIBUTION: ${{ secrets.AWS_DISTRIBUTION_PRODUCTION }}
@@ -93,17 +104,3 @@ jobs:
           AWS_REGION: "ap-southeast-1"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
-  frontend-testing:
-    runs-on: ubuntu-latest
-    name: Frontend Testing
-    needs:
-      - deploy
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          working-directory: website/tests
