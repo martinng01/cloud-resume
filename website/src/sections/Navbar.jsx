@@ -1,8 +1,17 @@
 export default function Navbar() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="navbar fixed bg-base-100 z-10">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">My Portfolio</a>
+        <button className="btn btn-ghost text-xl" onClick={scrollToTop}>
+          My Portfolio
+        </button>
       </div>
       <a href="https://linkedin.com/in/martinng01" target="_blank">
         <button className="btn btn-ghost btn-circle">
