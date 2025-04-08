@@ -1,3 +1,5 @@
+import profilePicture from "../assets/images/profile.jpeg";
+
 export default function Hero() {
   return (
     <div className="flex flex-row items-center justify-center h-screen w-full gap-8">
@@ -18,7 +20,7 @@ export default function Hero() {
 
       <div className="avatar">
         <div className="w-72 rounded-full">
-          <img src="./profile.jpeg" alt="" />
+          <img src={profilePicture} alt="" />
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import Work from "./sections/Work";
+import Projects from "./sections/Projects";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Work />
+      <Projects />
 
       <div
         aria-hidden="true"
