@@ -1,9 +1,9 @@
 const timelineData = [
   {
     company: "Proofpoint",
-    role: "AI Engineer",
+    role: "AI Engineer Intern",
     date: "Jul 2025 - Dec 2025",
-    description: [],
+    description: ["Worked on unsupervised classification"],
   },
   {
     company: "Ventas Bio",
