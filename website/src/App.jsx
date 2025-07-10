@@ -2,6 +2,7 @@ import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import Work from "./sections/Work";
 import Projects from "./sections/Projects";
+import VisitorCounter from "./sections/VisitorCount";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Hero />
       <Work />
       <Projects />
+      <VisitorCounter />
 
       <div
         aria-hidden="true"
