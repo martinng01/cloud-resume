@@ -1,5 +1,11 @@
 const timelineData = [
   {
+    company: "Proofpoint",
+    role: "AI Engineer",
+    date: "Jul 2025 - Dec 2025",
+    description: [],
+  },
+  {
     company: "Ventas Bio",
     role: "AI/ML Transformation Intern",
     date: "Sep 2024 - Jan 2025",

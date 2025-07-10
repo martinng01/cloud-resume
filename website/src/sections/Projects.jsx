@@ -21,7 +21,7 @@ function ProjectCard({ entry }) {
         <img
           className="h-54 w-full filter brightness-75"
           src={entry.image}
-          alt="Shoes"
+          alt={entry.title}
         />
       </figure>
       <div className="card-body">
