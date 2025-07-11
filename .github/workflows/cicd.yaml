@@ -3,7 +3,7 @@ name: Upload website to S3
 on:
   push:
     branches:
-      - react
+      - main
 
 jobs:
   backend-testing:
