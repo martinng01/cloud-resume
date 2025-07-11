@@ -4,7 +4,7 @@
 
 As a project to deepen my knowledge of AWS, I took on the Cloud Resume Challenge [here](https://cloudresumechallenge.dev/docs/the-challenge/aws/), where the goal was to create and deploy a static portfolio website. The main steps of the challenge are:
 
-- Creating a static website using HTML, CSS and JS
+- Creating a static website (I used React)
 - Deploy on S3 and use CloudFront for HTTPS
 - Display a visitor counter using DynamoDB
 - Infrastructure as Code (IaC) using Terraform
@@ -22,10 +22,6 @@ I'm glad I took on this challenge because it significantly expanded my knowledge
 - Infrastructure as Code (IaC) using tools like Terraform, which helped me automate and manage cloud infrastructure efficiently.
 - Working with AWS services, such as S3, CloudFront, and Route 53, gave me hands-on experience with cloud-based solutions and their integration.
 - Deeper understanding of computer networks.
-
-### Website
-
-I built the website using HTML, CSS and JS from scratch, using Bootstrap to assist in some of the components. Unlike others who used plain text only, I wanted to build a clean and modern UI that stands out and inspires.
 
 ### Networks
 
@@ -49,4 +45,4 @@ _Backend Testing -> Apply Terraform Changes -> Deploy to S3 Bucket/Invalidate Cl
 
 ### Testing
 
-I utilised Cypress for frontend testing, ensuring that my website functions as intended. For backend testing, I used pytest along with moto, which mocked AWS services, to effectively test my API and simulate interactions with AWS without incurring costs.
+For backend testing, I used pytest along with moto, which mocked AWS services, to effectively test my API and simulate interactions with AWS without incurring costs.
