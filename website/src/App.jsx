@@ -1,30 +1,56 @@
-import Navbar from "./sections/Navbar";
-import Hero from "./sections/Hero";
-import Work from "./sections/Work";
-import Projects from "./sections/Projects";
-import VisitorCounter from "./sections/VisitorCount";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import WorkExperience from "./components/WorkExperience";
+import Projects from "./components/Projects";
+import VisitorCounter from "./components/VisitorCounter";
 
-export default function App() {
+function App() {
+  const [visitorCount, setVisitorCount] = useState(0);
+
+  useEffect(() => {
+    const fetchVisitorCount = async () => {
+      fetch(
+        "https://ql7clnksoqep7jixmf6ontlkxu0kyhnu.lambda-url.ap-southeast-1.on.aws/"
+      )
+        .then((res) => res.json())
+        .then((data) => setVisitorCount(data))
+        .catch((err) => {
+          console.error("Error fetching visitor count:", err);
+          setVisitorCount(0); // Fallback count
+        });
+    };
+
+    fetchVisitorCount();
+  }, []);
+
   return (
-    <div className="App">
+    <div className="min-h-screen bg-dark-bg">
       <Navbar />
       <Hero />
-      <Work />
+      <WorkExperience />
       <Projects />
-      <VisitorCounter />
+      <VisitorCounter count={visitorCount} />
 
-      <div
-        aria-hidden="true"
-        className="fixed hidden dark:md:block dark:opacity-70 -bottom-[40%] -left-[20%] z-[-1]"
-      >
-        <img src="./gradients/left-blob.png" alt="" />
-      </div>
-      <div
-        aria-hidden="true"
-        className="fixed hidden dark:md:block dark:opacity-70 -top-[80%] -right-[60%] 2xl:-top-[60%] 2xl:-right-[45%] z-[-1] rotate-12"
-      >
-        <img src="./gradients/right-blob.png" alt="" />
+      {/* Background decorative elements */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-20 left-10 w-2 h-2 bg-neon-purple rounded-full animate-pulse-slow"></div>
+        <div
+          className="absolute top-40 right-20 w-1 h-1 bg-neon-pink rounded-full animate-pulse-slow"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-neon-purple rounded-full animate-pulse-slow"
+          style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute bottom-20 right-1/3 w-1 h-1 bg-neon-pink rounded-full animate-pulse-slow"
+          style={{ animationDelay: "0.5s" }}
+        ></div>
       </div>
     </div>
   );
 }
+
+export default App;
